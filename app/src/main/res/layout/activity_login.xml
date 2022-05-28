@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login">
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:src="@drawable/applogo"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/App_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продажа товаров и услуг"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/applogo"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Введите номер телефона"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/App_name"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:background="@drawable/input_design"
+        />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Введите пароль"
+        android:textSize="20dp"
+        android:layout_below="@id/input_number"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:background="@drawable/input_design"
+        />
+
+    <TextView
+        android:id="@+id/Admin_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_password"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="Вход для админа"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Not_Admin_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пользователь"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/input_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Admin_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
+        android:text="Войти"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

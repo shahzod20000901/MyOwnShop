@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/register">
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:src="@drawable/applogo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/Register_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:layout_below="@id/applogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="40dp"
+        />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Введите имя"
+        android:textSize="20dp"
+        android:layout_below="@id/Register_name"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:background="@drawable/input_design"
+        />
+    <EditText
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Введите номер"
+        android:textSize="20dp"
+        android:layout_below="@id/input_name"
+        android:padding="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_design"
+        />
+
+    <EditText
+        android:id="@+id/input_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Введите адрес"
+        android:textSize="20dp"
+        android:layout_below="@id/input_number"
+        android:padding="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_design"
+        />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Введите пароль"
+        android:textSize="20dp"
+        android:layout_below="@id/input_address"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_design"
+        />
+
+    <Button
+        android:id="@+id/Register_input"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:text="Регистрация"
+        android:textStyle="bold|italic"
+        android:background="@drawable/button"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input_password"
+        android:layout_marginTop="20dp"
+        />
+
+
+</RelativeLayout>
